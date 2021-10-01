@@ -52,8 +52,8 @@ for i in range (0,3):
     dict["cat"].append(cats[i])
 
 
-print(dict["dog"])
-print(dict["cat"])
+print (f'dog example{dict["dog"][1]}')
+print (f'cat example{dict["cat"][1]}')
 
 
 
