@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+body {
+	background-color: rgb(245, 245, 245);
+	font-size: 13px;
+}
+:root {
+  --offcanvas-width: 220px;
+  --topNavbarHeight: 46px;
+}
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
+
+  
+}
+.pad{
+  padding-left: 17%;
+}
+.search{
+  border-style: none;
+  font-size: 13px; 
+}
+
+  
+  
+.progress{
+  width: 100%;
+  max-width: 260px;
+  height: 6px;
+  background: #e1e4e8;
+  border-radius: 3px;
+  overflow: hidden;
+  
+}
+  .progress-bar{
+    display: block;
+    height : 100%;
+    background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
+    background-size: 300% 100%;
+    animation: progress-animation 2s linear infinite;
+  }
+
+  .pro{
+    min-height: 100px;
+    align-items: center;
+    padding: 30px;
+    justify-content: center;
+    text-align: center;
+  }
+  .nav-link i {
+    color: rgb(122, 122, 122);
+  }
+  
+  #dash span,
+  #dash i {
+    color: blue;
+  }
+  #cal i {
+    color: rgb(38, 238, 228);
+  }
+  #user i {
+    color: rgb(112, 190, 33);
+  }
+  #msg i {
+    color: rgb(230, 226, 48);
+  }
+  #mail i {
+    color: rgb(250, 7, 209);
+  }
+  .heading {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .progress {
+    height: 5px;
+  }
+  .main-heading {
+    font-weight: 700;
+  }
+  
+  .letter-var {
+    color: blue;
+  }
+  .frm{
+   padding-bottom: 15px;
+   padding-top: 12px;
+   font-size: 20px;
+  }
+
+  .new{
+    padding: 15px;
+  }
+  
